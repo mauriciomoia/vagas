@@ -1,0 +1,40 @@
+Desafio Rits
+
+Segue o desafio que compõe a segunda fase do processo seletivo para desenvolvedo. Busque desenvolver cada etapa mesmo que não consiga atingir 100%. 
+Não queremos saber apenas o que você já sabe, mas o seu potencial de aprendizado.
+
+Como entregar
+
+* Caso não possua, crie uma conta no Github (https://github.com).
+* Criar um repositório público para o projeto.
+* Mantenha um histórico de commits para o desafio
+* Ao finalizar o teste, responder o email com o link do repositório
+* No Readme, descrever como resolveu o desafio e os passos necessários para executar o projeto.
+
+Desafio 1
+
+Criar uma pequena aplicação de captura de currículos para uma vaga de trabalho.
+
+Etapas:
+
+* Desenvolver uma página onde um usuário se candidata a uma determinada vaga de emprego.
+O layout a ser utilizado está em anexo no email. Crie uma conta em www.figma.com e importe o arquivo .fig para habilitar a edição.
+
+* Desenvolver um admin para a aplicação. O admin deve possuir autenticação (login e senha) e permitir a visualização dos dados dos candidatos.
+(layout livre)
+
+* A aplicação deve todos os dias, às 12h e 18h, enviar um e-mail (definir o email padrão em algum arquivo de configuração) avisando quantos novos usuários se candidataram à vaga.
+
+Diferenciais:
+- Utilizar PHP e framework Laravel ou Python e Django [flask ou pyramid]
+- Utilizar PostgreSQl ou MongoDB
+- Implementar testes unitários
+
+Desafio 2 (BÔNUS)
+
+* Criar um bot para o Telegram onde um usuário envie para o robô o comando /VagasRits e ele te responda com o número de usuários que se candidataram até o momento 
+e abaixo o email dos 3 últimos candidatos a se registrar.
+
+Desafio 3 (BÔNUS)
+
+* Utilizar Docker (ou algum outro container).
