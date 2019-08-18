@@ -11,6 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'SiteController@index');
+
+Route::get('/login', 'SiteController@login');
+
+Route::get('/cadastro', 'SiteController@cadastro');
+
+Route::get('/vaga/{id}', 'SiteController@vaga');
+
+
+Route::group(['prefix'=>'painel','namespace'=>'Painel','middleware'=>'auth'],function(){
+	Route::resource('/vaga','VagaController');
 });
+

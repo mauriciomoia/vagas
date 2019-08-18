@@ -1,0 +1,2 @@
+php artisan make:controller NomeController
+php artisan make:controller Painel\\NomeController

@@ -1,0 +1,111 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body{
+	font-family: "Bree Serif",Helvetica,Arial,sans-serif !important;
+}
+   
+.navbar{
+	border-top: orange solid 5px;
+	
+}
+
+.navbar-brand{
+	color:blue !important;
+}
+   
+.jumbotron{
+	text-align:center;
+	color:white;
+	padding-top:10px;
+	padding-bottom:14px;
+	background:grey;
+}
+
+.jumbotron h2{
+	padding-bottom:0px;
+}
+
+.jumbotron p{
+	color:blue;
+	padding-top:10px;
+}
+
+.container{
+	color:white;
+}
+
+.main-card{
+	background:grey;
+	text-align:center;
+	padding-top:40px;
+	padding-bottom:20px;
+}
+
+.card{
+	background-position: center top;
+    background-size: 100% auto;
+	text-align:right;
+	padding-top:100px;
+}
+
+.card1{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../img/1.jpg');
+}
+
+.card2{
+	text-align:left;
+	padding-top:40px;
+	background:grey;
+	padding-bottom:47px;
+	padding-left:90px;
+}
+
+.card3{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../img/2.jpg');
+	padding-top:270px;
+}
+
+.card4{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../img/3.jpg');
+}
+
+.card5{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../img/4.jpg');
+}
+
+.card6{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../img/5.jpg');
+}
+
+.card7{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../img/6.jpg');
+}
+
+.card8{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../img/7.jpg');
+}
+
+footer{
+	color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
