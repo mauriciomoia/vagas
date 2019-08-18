@@ -4,24 +4,24 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUsersTable extends Migration
+class CreateAnunciosTable extends Migration
 {
     /**
      * Run the migrations.
      *
      * @return void
      */
-	 
-	protected $table = 'users';
-	
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('anuncios', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('nome');
-            $table->string('email')->unique();
-            $table->string('senha');
-            $table->rememberToken();
+			$table->string('titulo',255);
+			$table->string('descricao',2000);
+			$table->string('cidade',255);
+			$table->string('estado',2);
+			$table->string('pais',20);
+			$table->boolean('ativo');
+			$table->integer('usuarioid');
             $table->timestamps();
         });
     }
@@ -33,6 +33,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('anuncios');
     }
 }

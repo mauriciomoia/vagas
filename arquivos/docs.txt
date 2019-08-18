@@ -1,2 +1,13 @@
 php artisan make:controller NomeController
 php artisan make:controller Painel\\NomeController
+php artisan make:controller Painel\\NomeController --resource
+
+php artisan make:migration create_tabela_table
+php artisan migrate
+php artisan migrate:fresh
+
+php artisan make:seeder UserTableSeeder
+php artisan db:seed
+
+#cria migration
+ php artisan make:model Models\\Tabela -m
