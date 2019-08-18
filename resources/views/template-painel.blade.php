@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Empresa - Anúncios de emprego</title>
+        <title>Empresa - Painel administrativo</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -35,22 +35,13 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Menu</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="icon-bar"><a href="/logout" class="btn btn-primary">Sair</a></span>
           </button>
           <a class="navbar-brand" href="#">Empresa</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <form action="login" method="POST" class="navbar-form navbar-right" role="form">
-            @csrf
-            <div class="form-group">
-              <input name="email" type="text" placeholder="Email" class="form-control">
-            </div>
-            <div class="form-group">
-              <input name="senha" type="password" placeholder="Senha" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-primary">Entrar</button>
+            <a class="btn btn-primary" href='{!! url('/logout'); !!}'>Sair</a>
           </form>
         </div><!--/.navbar-collapse -->
       </div>

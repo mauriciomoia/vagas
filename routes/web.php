@@ -13,13 +13,12 @@
 
 Route::get('/', 'SiteController@index');
 
-Route::get('/login', 'SiteController@login');
+Route::post('/login', 'SiteController@login');
+Route::get('/logout', 'SiteController@logout');
 
-Route::any('/candidatar/{id}', 'SiteController@candidatar');
+Route::post('/candidatar/{id}', 'SiteController@candidatar');
 
 Route::get('/anuncio/{id}', 'SiteController@anuncio');
 
-Auth::routes();
-Route::group(['prefix'=>'painel','namespace'=>'Painel','middleware'=>'auth'],function(){
-	Route::resource('/painel','PainelController');
-});
+Route::get('/painel', 'Painel\\PainelController@index');
+
