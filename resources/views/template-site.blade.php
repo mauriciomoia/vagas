@@ -6,25 +6,25 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title><?=$title?></title>
+        <title>Empresa - Anúncios de emprego</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="<?php echo asset('css/bootstrap.min.css')?>" type="text/css">
         <style>
             body {
                 padding-top: 50px;
                 padding-bottom: 20px;
             }
         </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="<?php echo asset('css/bootstrap-theme.min..css')?>" type="text/css">
+        <link rel="stylesheet" href="<?php echo asset('css/main.css')?>" type="text/css">
+        <link rel="stylesheet" href="<?php echo asset('css/font-awesome.css')?>" type="text/css">
+        
 		<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-		
+		<script type="text/javascript" src="<?php echo asset('js/vendor/modernizr-2.8.3-respond-1.4.2.min.js')?>"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -42,7 +42,8 @@
           <a class="navbar-brand" href="#">Empresa</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <form action="upload.php" method="POST" class="navbar-form navbar-right" role="form">
+          <form action="login" method="POST" class="navbar-form navbar-right" role="form">
+            @csrf
             <div class="form-group">
               <input name="email" type="text" placeholder="Email" class="form-control">
             </div>
@@ -64,12 +65,10 @@
       <footer>
         <p>&copy; Empresa - 2019</p>
       </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-        <script src="js/vendor/bootstrap.min.js"></script>
-
-        <script src="js/main.js"></script>
+    </div> <!-- /container -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="<?php echo asset('js/vendor/bootstrap.min.js')?>"></script>
+        <script type="text/javascript" src="<?php echo asset('js/main.js')?>"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

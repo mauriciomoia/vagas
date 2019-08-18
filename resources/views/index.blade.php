@@ -1,52 +1,29 @@
-  @extends('template-site')
-  @section('content')
-  <div class="row">
-        <div class="col-md-12 main-card">
-			<h3>Portfólio</h3>
+@extends('template-site')
+@section('content')
+<div class="jumbotron">
+	<h3>Vagas</h3>
+	<div class="row" style="">
+		<div class="col-md-12">
 		</div>
 	</div>
-      <div class="row">
-        <div class="col-md-4">
-			<div class="row">
-				<div class="col-md-12 card card1">
-					<h4>Nome da Empresa</h4>
-					<p>Serviço</p>
-				</div>
-				<div class="col-md-12  card card2">
-					<h3>CONFIRA NOSSOS<br> TRABALHOS &#8594;</h3>
-				</div>
-			</div>
-        </div>
-        <div class="col-md-3  card card3">
-          <h4>Nome da Empresa</h4>
-          <p>Serviço</p>
-       </div>
-        <div class="col-md-5">
-          <div class="row">
-				<div class="col-md-12  card card4">
-					<h4>Nome da Empresa</h4>
-					<p>Serviço</p>
-				</div>
-				<div class="col-md-12  card card5">
-					<h4>Nome da Empresa</h4>
-					<p>Serviço</p>
-				</div>
-			</div>
-        </div>
-      </div>
-	  <div class="row">
-        <div class="col-md-4  card card6">
-          <h4>Nome da Empresa</h4>
-          <p>Serviço</p>
-        </div>
-        <div class="col-md-4  card card7">
-          <h4>Nome da Empresa</h4>
-          <p>Serviço</p>
-       </div>
-        <div class="col-md-4  card card8">
-          <h4>Nome da Empresa</h4>
-          <p>Serviço</p>
-        </div>
-      </div>
+</div>
 
-  @endsection
+<div class="row" style="">
+	<div class="col-md-4">
+	</div>
+	<div class="col-md-4">
+		<?php foreach($anuncios as $item){ ?>
+		<div class="row" >
+			<a href="anuncio/<?=$item->id?>">
+			<div class="col-md-12">
+				<b><?=$item->titulo?></b><br>
+				<?=$item->descricao?>
+			</div>
+			</a>
+		</div>
+		<?php } ?>
+	</div>
+	<div class="col-md-4">
+	</div>
+</div>
+@endsection

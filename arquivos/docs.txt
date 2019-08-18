@@ -11,3 +11,6 @@ php artisan db:seed
 
 #cria migration
  php artisan make:model Models\\Tabela -m
+ 
+#autenticacao
+php artisan make:auth

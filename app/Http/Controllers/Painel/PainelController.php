@@ -12,4 +12,8 @@ class PainelController extends Controller
 		//->only(['function1','function2']);
 		//->except(['function1','function2']);
 	}
+	
+	public function index(){
+		return view('painel.index');
+	}
 }

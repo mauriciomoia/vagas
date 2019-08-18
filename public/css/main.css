@@ -1,0 +1,46 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body{
+	font-family: "Bree Serif",Helvetica,Arial,sans-serif !important;
+}
+   
+.navbar{
+	border-top: orange solid 5px;
+	
+}
+
+.navbar-brand{
+	color:blue !important;
+}
+
+.jumbotron{
+	
+	min-height:400px;
+	background:linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ), url('../img/bg.png');
+	color:white;
+	text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

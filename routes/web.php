@@ -15,12 +15,11 @@ Route::get('/', 'SiteController@index');
 
 Route::get('/login', 'SiteController@login');
 
-Route::get('/cadastro', 'SiteController@cadastro');
+Route::any('/candidatar/{id}', 'SiteController@candidatar');
 
-Route::get('/vaga/{id}', 'SiteController@vaga');
+Route::get('/anuncio/{id}', 'SiteController@anuncio');
 
-
+Auth::routes();
 Route::group(['prefix'=>'painel','namespace'=>'Painel','middleware'=>'auth'],function(){
-	Route::resource('/vaga','VagaController');
+	Route::resource('/painel','PainelController');
 });
-
