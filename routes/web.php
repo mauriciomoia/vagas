@@ -15,10 +15,10 @@ Route::get('/', 'SiteController@index');
 
 Route::post('/login', 'SiteController@login');
 Route::get('/logout', 'SiteController@logout');
-
 Route::post('/candidatar/{id}', 'SiteController@candidatar');
-
 Route::get('/anuncio/{id}', 'SiteController@anuncio');
 
 Route::get('/painel', 'Painel\\PainelController@index');
+Route::post('/painel/anuncio/add', 'Painel\\PainelController@anuncioadd');
+Route::get('/painel/anuncio/view/{id}', 'Painel\\PainelController@anuncioview');
 

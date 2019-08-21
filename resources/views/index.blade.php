@@ -14,14 +14,18 @@
 	<div class="col-md-4">
 		<?php foreach($anuncios as $item){ ?>
 		<div class="row" >
-			<a href="anuncio/<?=$item->id?>">
 			<div class="col-md-12">
-				<b><?=$item->titulo?></b><br>
+				<a href="anuncio/<?=$item->id?>"><b><?=$item->titulo?></b></a>
+				<br>
 				<?=$item->descricao?>
+				<br><br>
+				<?=$item->cidade?>/<?=$item->estado?>
+				<?=$item->created_at?>
 			</div>
-			</a>
 		</div>
+		<hr>
 		<?php } ?>
+		
 	</div>
 	<div class="col-md-4">
 	</div>
